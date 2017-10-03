@@ -1,4 +1,5 @@
-
+#musical varation of a creepy hallway or region
+#similar to one you would expect in a rpg game or even a horror movie
 
 with_fx :bitcrusher do
   live_loop :density do
