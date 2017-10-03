@@ -1,4 +1,7 @@
  
+ //Took the Distance 2D Example from the processing.org and added an interactive animated sequence to it
+ 
+ 
 float max_distance;
 
 void setup() {
