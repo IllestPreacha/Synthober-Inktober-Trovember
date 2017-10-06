@@ -1,3 +1,5 @@
+PFont myFont;
+
 float a = 0;
 float b = 0;
 boolean c = false;
@@ -5,6 +7,8 @@ boolean d = false;
  
 void setup() {
   size(400, 400);
+  myFont = createFont("ACaslonPro-BoldItalic-48.vlw", 32);
+  textFont(myFont);
 }
  
 void draw() {
@@ -13,6 +17,7 @@ void draw() {
   counter();
   textSize(12);
   textAlign(CENTER);
+  fill(0);
   text("Side to Side Counter", width * 1/2, height / 8);
   text(a, width / 4, height / 2);
   text(b, width * 3 / 4, height / 2);
