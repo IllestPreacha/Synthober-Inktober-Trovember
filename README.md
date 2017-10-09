@@ -8,3 +8,4 @@ Utilzing the different components of inktober and utilizing it for creative codi
 + Day 5: SidetoSide.pde
 + Day 6: EndingOfWeek.rb
 + Day 7: Movement.pyde
++ Day 8: TopToBottomPoetry.pyde
