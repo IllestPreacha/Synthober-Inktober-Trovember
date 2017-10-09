@@ -1,4 +1,4 @@
-# timer is using the seconds function to trigger the background to change, also isolated the mousebutton to trigger interactivity
+# timer is using the seconds function to trigger the background to change
 counter1 = 0.0
 counter2 = 0.0
 xpos = 0
