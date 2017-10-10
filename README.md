@@ -12,3 +12,4 @@ Week 1
 Week 2
   + Day 8: TopToBottomPoetry.pyde
   + Day 9: Bangerz.py
+  + Day 10: BangerzReloaded.py
