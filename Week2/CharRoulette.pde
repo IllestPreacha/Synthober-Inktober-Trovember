@@ -7,7 +7,7 @@ void setup()
   size(800, 600);
   textAlign(CENTER);
   textSize(20);
-  text("Press any Key to Start the CharRoulette", width/2, height/2);
+  text("Press any Key to Start the CharRoulette and Keep Pressing", width/2, height/2);
 }
 
 void draw()
