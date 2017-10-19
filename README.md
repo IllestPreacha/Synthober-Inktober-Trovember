@@ -20,3 +20,4 @@ Week 2
 
 Week 3
   + Day 15: AfroBeat2.rb
+  + Day 16: YourCreepyChoice.rb
