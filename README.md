@@ -17,3 +17,6 @@ Week 2
   + Day 12: ArrayMadness.pde
   + Day 13: FeelTheBeat1.rb
   + Day 14: CharRoulette.pde
+
+Week 3
+  + Day 15: AfroBeat2.rb
