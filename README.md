@@ -21,4 +21,4 @@ Week 2
 Week 3
   + Day 15: AfroBeat2.rb
   + Day 16: YourCreepyChoice.rb
-  + Day 17: CharBlockage.pde
+  + Day 17: CharBlockage.pde, CharBlocking.rb
