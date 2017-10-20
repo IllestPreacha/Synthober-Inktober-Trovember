@@ -1,4 +1,6 @@
 //an army of Pacman comes alive
+//a remix of the example of motion in the processing book
+// going to add some more functionality later on
 
 Pacman Pac1;
 Pacman Pac2; 
