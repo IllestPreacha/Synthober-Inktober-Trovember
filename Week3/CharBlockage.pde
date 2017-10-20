@@ -1,6 +1,9 @@
 //adding a nested for loop and some color to a previous done Processing challenge : https://github.com/illestknock/ChallengesforProcessing/blob/master/SecondChallenge.pde
 //where you had to print to the console and this time by pressing the a Key, you enter into A CharRoulette
 
+import processing.sound.*;
+
+SoundFile CharBlocking;
 
 //initializing charRoulette Array
 char rotational [] = {
@@ -23,6 +26,7 @@ void setup()
   text("Welcome to CharBlockage and wait for the game to commence", width/2, height/2);
   text("When the character is shown on the top you block out as many", width/2, height/1.8);
   text("as you can by clicking on the character", width/2, height/1.6);
+  CharBlocking = new SoundFile(this, "CharBlocking.wav");
 }
 
 void draw()
@@ -35,12 +39,12 @@ void draw()
     CharBlockaged();
   }
 
-    if (second() % 6 == 0)
+    if (second() % 8 == 0)
     {
       BackgroundSequenece();
       Sequencer();
+      CharBlocking.play();
     }
-
 }
 
 //this returns a char variable for usage in the counter, to highlight when that particular char is prompted by the roulette
