@@ -1,6 +1,6 @@
-//an army of Pacman comes alive
-//a remix of the example of motion in the processing book
-// going to add some more functionality later on
+//an army of Pacman comes alive and your job is to click on them to gain points
+//if you miss , you lose points
+//hard version
 
 Pacman Pac1;
 Pacman Pac2; 
@@ -23,6 +23,11 @@ Pacman Pac18;
 Pacman Pac19; 
 Pacman Pac20;
 
+// setting up the clicking events
+int ClickCounter = 0;
+color NotFill;
+
+
 //Sett
 void setup() {
   size(800, 600);
@@ -30,12 +35,12 @@ void setup() {
   // setting up the Pacman
   Pac1 = new Pacman(color(#F20A0A), 40, 50, 100, 1, 15, color(#12FFC2), 1, 1); 
   Pac2 = new Pacman(color(#12FFC2), 40, 100, 200, 2, 10, color(#F20A0A), 1, 1);
-  Pac3 = new Pacman(color(#A312FF), 40, 150, 300, 3, 0, color(#A312FF), 1, 1);
+  Pac3 = new Pacman(color(#A312FF), 40, 150, 300, 3, 5, color(#A312FF), 1, 1);
   Pac4 = new Pacman(color(#DFFF12), 40, 200, 400, 4, 4, color(#F295AB), 1, 1);
   Pac5 = new Pacman(color(#FA1900), 40, 250, 500, 5, 1, color(#67456F), 1, 1);
   Pac6 = new Pacman(color(#277639), 40, 300, 150, 6, 1, color(#A6ACAD), 1, 1); 
   Pac7 = new Pacman(color(#A6ACAD), 40, 350, 250, 7, 1, color(#277639), 1, 1);
-  Pac8 = new Pacman(color(#67456F), 40, 400, 350, 8, 0, color(#D8D214), 1, 1);
+  Pac8 = new Pacman(color(#67456F), 40, 400, 350, 8, 1, color(#D8D214), 1, 1);
   Pac9 = new Pacman(color(#D8D214), 40, 450, 450, 9, 0.5, color(#277639), 1, 1);
   Pac10 = new Pacman(color(#F295AB), 40, 500, 500, 10, 4, color(#FA1900), 1, 1);
   Pac11 = new Pacman(color(#BB95F2), 40, 550, 550, 11, 11, color(#DFFF12), 1, 1);
@@ -46,12 +51,13 @@ void setup() {
   Pac16 = new Pacman(color(#277639), 40, 300, 150, 16, 3, color(#A6ACAD), 1, 1); 
   Pac17 = new Pacman(color(#A6ACAD), 40, 350, 250, 17, 1, color(#277639), 1, 1);
   Pac18 = new Pacman(color(#67456F), 40, 400, 350, 18, 2, color(#D8D214), 1, 1);
-  Pac19 = new Pacman(color(#D8D214), 40, 450, 450, 19, 0, color(#277639), 1, 1);
+  Pac19 = new Pacman(color(#D8D214), 40, 450, 450, 19, 1, color(#277639), 1, 1);
   Pac20 = new Pacman(color(#F295AB), 40, 50, 100, 20, 20, color(#FA1900), 1, 1);
 }
 
 void draw() {
   background(0);
+
 
   Pac1.motion();
   Pac2.motion();
@@ -73,6 +79,8 @@ void draw() {
   Pac18.motion();
   Pac19.motion();
   Pac20.motion();
+  
+  CountertoText(ClickCounter);
 }
 
 
@@ -135,4 +143,47 @@ class Pacman {
   }
 }
 
+void CountertoText(int display)
+{
+  textSize(20);
+  textAlign(CENTER); 
+  rectMode(CENTER);
+  fill(0);
+  rect(width/2,height-40,90,40);
+  fill(255);
+  text("Score " + display, width/2, height - 40);
+
+}
+
+//rules setup
+void Rules()
+{
+ if (second() < 5)
+  {
+  fill(255);
+  textSize(34);
+  text("Click on the Pacman to score", width/2, height / 7);
+  text("if clicked on the background, you lose points", width/2, height / 6);
   }
+}
+
+// when mouse is released , it triggers the ClickCounting Function
+void mouseReleased()
+{
+  ClickCounting();
+}
+
+// This uses the Clickcounter as means to Collect the Score
+void ClickCounting()
+{
+  //when the color is not black ( which are the pacmen) , User Gain Points , if you click on anything else you lose points
+   NotFill = get(mouseX,mouseY); 
+  if (NotFill != color (0))
+  {
+  ClickCounter ++;
+  }
+  else {
+  ClickCounter --;
+  }
+  CountertoText(ClickCounter);
+}
