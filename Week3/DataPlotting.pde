@@ -4,7 +4,7 @@ int[] Receptions;
 int[] RecYards;
 
 void setup() {
-  size(480,300);
+  size(480, 300);
   //top 40 nfl recievers in yaradage
   Table Recievers = loadTable("D2.tsv");
   int rowCount = Recievers.getRowCount();
@@ -27,7 +27,7 @@ void draw() {
 
 void GridLines()
 {
-   background(122);
+  background(122);
   // Draw background grid for data
   stroke(255);
   line(20, 100, 20, 20);
@@ -54,7 +54,6 @@ void info()
   text("Receptions More than 34 and More than 58 YPG", width/2, height-32);
   fill(#F7EC11); 
   text("Receptions More than 34 and Less than 58 YPG", width/2, height-14);
-  
 }
 
 void RecS()
@@ -66,18 +65,15 @@ void RecS()
     stroke(204, 51, 0);
     if (Receptions[i] < 34 && RecYards[i] < 58 ) // using 34 as a based
     {
-    fill(#11DEF7);
+      fill(#11DEF7);
+    } else if (Receptions[i] < 34 && RecYards[i] > 58 ) {
+      fill(#1CF711);
+    } else if (Receptions[i] > 34 && RecYards[i] > 58 ) {
+      fill(#1811F7);
+    } else if (Receptions[i] > 34 && RecYards[i] < 58) {
+      fill(#F7EC11);
     }
-    else if(Receptions[i] < 34 && RecYards[i] > 58 )  {
-    fill(#1CF711);  
-    }
-    else if(Receptions[i] > 34 && RecYards[i] > 58 ){
-     fill(#1811F7); 
-    }
-    else if(Receptions[i] > 34 && RecYards[i] < 58){
-    fill(#F7EC11);  
-    }
-    
-    ellipse(x, y, 10,10);
+
+    ellipse(x, y, 10, 10);
   }
 }
