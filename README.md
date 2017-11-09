@@ -33,3 +33,4 @@ Week 4
   + Day 24: WinterVibes.rb
   + Day 25: RectAngles.rpde
   + Day 26: Simpleness.rb
+  + Day 27: SingleSynth.rb
