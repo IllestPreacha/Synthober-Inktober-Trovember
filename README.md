@@ -1,4 +1,4 @@
-Utilzing the different components of inktober and utilizing it for creative coding (Pde are Processing Sketches, rb files are Sonic Pi Songs and Tidal are Tidal Cycles Songs/ Soundscapes)
+Utilzing the different components of inktober & Synthober and utilizing it for creative coding (Pde are Processing Sketches, rb files are Sonic Pi Songs and Tidal are Tidal Cycles Songs/ Soundscapes)
 
 Week 1
   + Day 1: CreepyHallway.rb	
@@ -31,3 +31,4 @@ Week 4
   + Day 22: DataPlotting.pde
   + Day 23: TempoFlow.rb
   + Day 24: WinterVibes.rb
+  +
