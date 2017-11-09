@@ -1,0 +1,32 @@
+settings <- function() {
+    size(800, 600)
+}
+
+setup <- function(){
+ background(100,200,100)
+}
+ 
+draw <- function(){
+
+rectMode(RADIUS) 
+fill(abs(mouseX-545),mouseX/4 +255,abs(mouseY-345), (mouseX %% 10))
+rect(100,100, 50, 50)
+
+rectMode(CORNER)
+fill(mouseX/4,mouseY/3+55,abs(mouseX-mouseY),mouseY)
+rect(100, 100, 50, 50)
+
+rectMode(CENTER)  
+fill(abs(mouseX-mouseY),mouseY/3,mouseX/4,(mouseY %% 30))
+rect(100, 100, 50, 50)
+
+
+rectMode(CORNERS)  
+fill(mouseX/4+55,abs(mouseX-mouseY), mouseY/3,mouseX)
+rect(100,100, 50, 50)
+
+
+
+
+
+}
