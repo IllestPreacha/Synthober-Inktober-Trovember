@@ -1,4 +1,4 @@
-Utilzing the different components of inktober, Synthober and Trovember for Creative coding (Pde are Processing Sketches, rb files are Sonic Pi Songs and Tidal are Tidal Cycles Songs/ Soundscapes)
+Utilzing the different components of inktober, Synthober and Trovember for Creative coding (Pde are Processing Sketches, rb files are Sonic Pi Songs and Tidal are Tidal Cycles Songs/ Soundscapes, scad files are OpenScad)
 
 Week 1
   + Day 1: CreepyHallway.rb	
