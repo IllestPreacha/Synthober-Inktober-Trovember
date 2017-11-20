@@ -35,3 +35,6 @@ Week 4
   + Day 26: Simpleness.rb
   + Day 27: SingleSynth.rb
   + Day 28: Messing_Around.scad
+
+Week 5
+  + Day 29: TripleSynthing.rb
