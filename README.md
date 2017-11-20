@@ -38,3 +38,4 @@ Week 4
 
 Week 5
   + Day 29: TripleSynthing.rb
+  + Day 30: PoundingHeart2.rb
