@@ -39,3 +39,8 @@ Week 4
 Week 5
   + Day 29: TripleSynthing.rb
   + Day 30: PoundingHeart2.rb
+  + Day 31: SpeedyMagic.rb
+  + Day 32: SoundMangling.rb
+  + Day 33: FlowingWaves.rb
+  + Day 34: FlowingWaves2.rb
+ 
