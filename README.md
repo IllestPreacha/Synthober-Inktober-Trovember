@@ -46,3 +46,11 @@ Week 5
   + Day 34: FlowingWaves2.rb
   + Day 35: BliponBlips.rb
  
+ Week 6
+  + Day 36: BreakBeating.rb
+  + Day 37: BreakingOnADime.rb
+  + Day 38: BuzzingAround.rb
+  + Day 39: NewThings.rb
+  + Day 40: RaceToDawn.rb
+  + Day 41: RaceToDawn2.rb
+  + Day 42: RaceToDawn3.rb
