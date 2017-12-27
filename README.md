@@ -54,3 +54,12 @@ Week 5
   + Day 40: RaceToDawn.rb
   + Day 41: RaceToDawn2.rb
   + Day 42: RaceToDawn3.rb
+  
+ Week 7
+  + Day 43: Distortion.rb	 
+  + Day 44: Distortion2.rb	 
+  + Day 45: Distortion3.rb	
+  + Day 46: FuturePeep.rb	
+  + Day 47: Gentler.rb	
+  + Day 48: NeverEnoughDrums.rb	
+  + Day 49: StaticCollision.rb
