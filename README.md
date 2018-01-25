@@ -77,3 +77,8 @@ Week 5
   + Day 57: ColorDemo1.rpde
   + Day 58: NoisyTake.pde
   + Day 59: ShiftsByFrame.pde
+ Tweetable Sound Series inspired by @IamnotSonicPi
+  + Day 60: TweetableCH1.rb	
+  + Day 61: TweetableCH2.rb	
+  + Day 62: TweetableCH3.rb	
+  + Day 63: TweetableCH4.rb
