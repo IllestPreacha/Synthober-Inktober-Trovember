@@ -1,0 +1,27 @@
+settings <- function() {
+    size(800, 600)
+}
+
+
+draw <- function() {
+      if (mouseX %/% 2 == 0) {
+      background(225,mouseY/3,mouseX/3)
+        }
+     else {
+       background(110,mouseX/4,90)
+  
+  
+  
+    rectMode(CORNERS)
+    rect(mouseX, mouseY, abs(mouseX-mouseY), (mouseX+mouseY)/2.2)
+    
+  
+    }
+    
+    
+}
+
+mousePressed <- function() {
+
+
+}
