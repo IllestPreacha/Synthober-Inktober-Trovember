@@ -73,3 +73,6 @@ Week 5
   + Day 55: HarbourMalfunction.rb	
   + Day 56: DullingAround.rb
  
+ Week 9
+  + Day 57: ColorDemo1.rpde
+  + Day 58: NoisyTake.pde
