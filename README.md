@@ -63,3 +63,13 @@ Week 5
   + Day 47: Gentler.rb	
   + Day 48: NeverEnoughDrums.rb	
   + Day 49: StaticCollision.rb
+  
+ Week 8
+  + Day 50: TimeAfterTime.ck	
+  + Day 51: StormyDays.rb	
+  + Day 52: Snaps.rb	
+  + Day 53: PhoneDial.ck	
+  + Day 54: New Vibes.rb	
+  + Day 55: HarbourMalfunction.rb	
+  + Day 56: DullingAround.rb
+ 
