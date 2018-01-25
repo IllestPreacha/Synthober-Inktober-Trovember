@@ -1,4 +1,4 @@
-Utilzing the different components of inktober, Synthober and Trovember for Creative coding (Pde are Processing Sketches, rb files are Sonic Pi Songs and Tidal are Tidal Cycles Songs/ Soundscapes, scad files are OpenScad). PS. Some days had more than one sketch to make up for a missed day.  After Day 68 , I will just be adding in Sketch Numbers
+Utilzing the different components of inktober, Synthober and Trovember for Creative coding (Pde are Processing Sketches, rb files are Sonic Pi Songs and Tidal are Tidal Cycles Songs/ Soundscapes, scad files are OpenScad). PS. Some days had more than one sketch to make up for a missed day.
 
 
 Week 1
