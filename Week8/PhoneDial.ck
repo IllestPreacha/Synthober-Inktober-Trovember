@@ -1,10 +1,10 @@
 // PhoneDial.ck , a retake of a tutorial of https://github.com/bonniee/chuck-workshop/blob/gh-pages/code/pitchdrop.ck
 //Transform the sounds into more of a rapid Phone Dialing with Interference
-Phasor osc => Envelope e1 =>  dac.left; //envelopes are transitional, output to speakers
-SinOsc sin => Envelope e2 =>  dac.right;
-13::ms => dur delay;
+Phasor osc => Envelope e1 =>  dac; //envelopes are transitional, output to speakers
+SinOsc sin => Envelope e2 =>  dac;
+50::ms => dur tempo; //setting the duration to 50 millisecond
 
-
+//Phone Call Element 
 fun void PhoneCall()
 {
 
@@ -17,14 +17,13 @@ Math.random2(3,11) => float vol2;
   osc.gain(vol1); // setting the first volume
   <<<vol1>>>; // printing volume 
     
-    delay => now;
+tempo => now; //time being used discretely
     
-   sin.freq(200-i);
-   sin.gain(vol2); 
-   <<<vol2>>>; 
+ //changing the frequency and gain of the sound
+ sin.freq(200-i);
+ sin.gain(vol2); 
+ <<<vol2>>>; 
   
-  
-    
   e1.keyOn();
   Math.random2(100,175)::ms => now; //wait between 100 & 175 ms
   e1.keyOff();
@@ -39,7 +38,6 @@ Math.random2(3,11) => float vol2;
 2::second => now;
 
  PhoneCall();
-
 
 
 
