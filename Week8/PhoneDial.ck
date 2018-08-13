@@ -2,7 +2,7 @@
 //Transform the sounds into more of a rapid Phone Dialing with Interference
 Phasor osc => Envelope e1 =>  dac; //envelopes are transitional, output to speakers
 SinOsc sin => Envelope e2 =>  dac;
-50::ms => dur tempo; //setting the duration to 50 millisecond
+50::ms => dur delay; //setting the duration to 50 millisecond
 
 //Phone Call Element 
 fun void PhoneCall()
@@ -17,7 +17,7 @@ Math.random2(3,11) => float vol2;
   osc.gain(vol1); // setting the first volume
   <<<vol1>>>; // printing volume 
     
-tempo => now; //time being used discretely
+delay => now; //time being used discretely
     
  //changing the frequency and gain of the sound
  sin.freq(200-i);
